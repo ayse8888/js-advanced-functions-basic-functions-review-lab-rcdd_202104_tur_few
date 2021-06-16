@@ -1,16 +1,28 @@
-function saturdayFun(userInput="roller-skate") {
-   return `This Saturday, I want to ${userInput}!`
-}
-const mondayWork = function (userWork="go to the office") {
-    return `This Monday, I will ${userWork}.`
-}
-function wrapAdjective(first="*"){
-    return function(second="special") {
-        return `You are ${first}${second}${first}!`
+// Your code here
 
-    }
+// Challenge1
+function saturdayFun(activity="roller-skate") {
+  return `This Saturday, I want to ${activity}!`;
 }
 
+const mondayWork = function (activity="go to the office") {
+  return `This Monday, I will ${activity}!`;
+}
+mondayWork()
+
+
+// Challenge3
+function wrapAdjective(str="*") {
+  return function(adjective="special") {
+    return `You are ${str}${adjective}${str};`
+  }
+}
+
+wrapAdjective("||")("a dedicated programmer")
+wrapAdjective()("a hard worker")
+
+
+// Challenge4
 const Calculator = {
     Calculator : {},
     add: function(x, y){return x + y},
@@ -23,7 +35,7 @@ const Calculator = {
 
 function multi1(x){
     return x*2 ;
-};
+}
 function add1(x){
     return x + 1000;
 }
@@ -32,26 +44,5 @@ function modulo1(x) {
 }
 
 
+l
 
-
-let array1 = [multi1, add1, modulo1];
-
-function actionApplyer(startInt, array) {
-    let result = 0;
-    
-    if (array == 0 ){
-        return startInt
-    }
-    else { for(let i=0;i<array.length;i++){ 
-        result = array[i](startInt)
-        
-        startInt = result;  
-        }
-        
-        return result
-        
-}
-
-    
-};
-actionApplyer(13, array1);
