@@ -1,12 +1,12 @@
-function saturdayFun(userInput="roller-skate") {
-   return `This Saturday, I want to ${userInput}!`
+function saturdayFun(activity="roller-skate") {
+   return `This Saturday, I want to ${activity}!`
 }
-const mondayWork = function (userWork="go to the office") {
-    return `This Monday, I will ${userWork}.`
+const mondayWork = function (activity="go to the office") {
+    return `This Monday, I will ${activity}.`
 }
-function wrapAdjective(first="*"){
-    return function(second="special") {
-        return `You are ${first}${second}${first}!`
+function wrapAdjective(str="*"){
+    return function(djectivespecial") {
+        return `You are ${str}${second}${str}!`
 
     }
 }
