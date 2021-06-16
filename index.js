@@ -23,11 +23,25 @@ wrapAdjective()("a hard worker")
 
 
 // Challenge4
-const Calculator = {}
-function add(){
-  return Calculator.add = 1 + 3
+const Calculator = {
+    Calculator : {},
+    add: function(x, y){return x + y},
+    subtract: function(x, y){return x - y},
+    multiply: function(x, y){return x * y},
+    divide: function(x, y){return x / y}
+
+};
+
+
+function multi1(x){
+    return x*2 ;
+};
+function add1(x){
+    return x + 1000;
 }
-add()
+function modulo1(x) {
+    return x % 7;
+}
 
 
 
