@@ -35,7 +35,7 @@ const Calculator = {
 
 function multi1(x){
     return x*2 ;
-};
+}
 function add1(x){
     return x + 1000;
 }
