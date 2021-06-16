@@ -47,8 +47,6 @@ function actionHandler(int, arr) {
         int = result;  
         }
       return result
+  }
 }
-
-    
-};
 actionHandler(10, newArray);
