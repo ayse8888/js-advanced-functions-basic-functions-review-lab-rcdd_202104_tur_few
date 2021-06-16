@@ -5,8 +5,8 @@ const mondayWork = function (activity="go to the office") {
     return `This Monday, I will ${activity}.`
 }
 function wrapAdjective(str="*"){
-    return function(second="special") {
-        return `You are ${str}${second}${str}!`
+    return function(adjective="special") {
+        return `You are ${str}${secoadjectivend}${str}!`
 
     }
 }
@@ -21,37 +21,34 @@ const Calculator = {
 };
 
 
-function multi1(x){
+function multiply(x){
     return x*2 ;
-};
-function add1(x){
+}
+function add(x){
     return x + 1000;
 }
-function modulo1(x) {
+function modulo(x) {
     return x % 7;
 }
 
 
 
 
-let array1 = [multi1, add1, modulo1];
+let newArray = [multiply, add, modulo];
 
-function actionApplyer(startInt, array) {
+function actionHandler(int, arr) {
     let result = 0;
     
-    if (array == 0 ){
-        return startInt
+    if (arr === 0 ){
+        return int
     }
-    else { for(let i=0;i<array.length;i++){ 
-        result = array[i](startInt)
-        
-        startInt = result;  
+    else { for(let i=0; i<arr.length; i++){ 
+        result = arr[i](int)
+        int = result;  
         }
-        
-        return result
-        
+      return result
 }
 
     
 };
-actionApplyer(13, array1);
+actionHandler(10, newArray);
