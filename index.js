@@ -44,4 +44,25 @@ function modulo1(x) {
 }
 
 
+let array1 = [multi1, add1, modulo1];
+
+function actionApplyer(startInt, array) {
+    let result = 0;
+    
+    if (array == 0 ){
+        return startInt
+    }
+    else { for(let i=0;i<array.length;i++){ 
+        result = array[i](startInt)
+        
+        startInt = result;  
+        }
+        
+        return result
+        
+}
+
+    
+};
+actionApplyer(13, array1);
 
