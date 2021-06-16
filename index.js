@@ -14,7 +14,7 @@ mondayWork()
 // Challenge3
 function wrapAdjective(str="*") {
   return function(adjective="special") {
-    return `You are ${str}${adjective};`
+    return `You are ${str}${adjective}${str};`
   }
 }
 
